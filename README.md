@@ -1,4 +1,4 @@
-## Asignment 1
+## Assignment 1
 
 1. Write a LEX specification files to:
 
