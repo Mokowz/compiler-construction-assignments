@@ -11,7 +11,7 @@ was|being|be|been         { printf("Verb: %s\n", yytext); }
 do|does|did|will          { printf("Verb: %s\n", yytext); }
 would|should|can|could    { printf("Verb: %s\n", yytext); }
 has|have|had|go           { printf("Verb: %s\n", yytext); }
-.|\\n                     {/* Do nothing */}
+.|\n                     {/* Do nothing */}
 %%
 
 int main() {
