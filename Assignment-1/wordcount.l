@@ -8,7 +8,7 @@ int totalSize = 0;
 %%
 [a-zA-Z]+                { wordCount++; totalSize += yyleng; }
 [a-zA-Z]+[-'][a-zA-Z]+   { wordCount++; totalSize += yyleng; }
-.|\n                     { totalSize++; }
+.|\n                     
 %%
 
 int main() {
@@ -19,6 +19,10 @@ int main() {
   return 0;
 }
 
+// Call to indicate end of input
 int yywrap() {
   return 1;
 }
+
+// ^[0-9]+"."[0-9]+$
+// a{2-4}

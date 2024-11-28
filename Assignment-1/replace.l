@@ -3,8 +3,8 @@
 %}
 
 %%
-abc           { printf("ABC"); }
-.             { printf("%s", yytext); } //Print the rest as they are
+abc             { printf("ABC"); }
+.               { printf("%s", yytext); } //Print the rest as they are
 %%
 
 int main() {
@@ -13,5 +13,6 @@ int main() {
 }
 
 int yywrap() {
+  printf("\n");
   return 1;
 }
